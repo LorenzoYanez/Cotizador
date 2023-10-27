@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cotizador.css">
+    <script defer src="../js/dolar.js"></script>
+    <script defer src="../js/cotizador.js"></script>
+    <title>Cotizador de Seguros en linea</title>
+  </head>
+  <body>
+    <div class="container flex justify-center my-10">
+      <div class="bg-gray-200 p-6 rounded-xl shadow-xl" id="contanido">
+        <header class="navbar" >
+          <div class="text-3xl mb-6">Cotiza tu Vehiculo</div>
+        </header>
+        <div class="formulario">
+          <form id="cotizar-seguro">
+            <div id="mensaje-error"></div>
+            <div class="mb-2">
+              <label>Selecciona tu Vehiculo</label>
+              <select name="vehiculo" id="vehiculo" class="rounded">
+                <option value="">-- Selecciona --</option>
+                <option value="Auto">Auto</option>
+                <option value="Camioneta">Camioneta</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label>Año</label>
+              <select name="year" id="year" class="rounded"></select>
+            </div>
+            <div class="mb-2">
+              <label>Marca</label>
+              <select name="Marca" id="Marca" class="rounded">
+                <option value="">-- Selecciona --</option>
+                <option value="50">Ford</option>
+                <option value="125">Chevrolet</option>
+                <option value="200">Nissan</option>
+                <option value="1000">Renaul</option>
+                <option value="1000">Bmw</option>
+                <option value="1000">Fiat</option>
+                <option value="1000">Toyota</option>
+                <option value="1000">Land Rover</option>
+                <option value="1000">Subaru</option>
+                <option value="1000">Peugueot</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label>Tipo de uso</label>
+              <select name="usos" id="usos" class="rounded" >
+                <option value="">-- Selecciona --</option>
+                <option value="negra">Utilitario</option>
+                <option value="roja">De carga</option>
+                <option value="blanca">Para el campo</option>
+                <option value="verde">Sguridad</option>
+                <option value="azul">Familiar</option>
+              </select>
+            </div>
+            <fieldset>
+              <legend class="font-bold uppercase text-xl w-full mt-2">
+                Tipo Seguro
+              </legend>
+              <div class="mt-2">
+                <div>
+                  <label class="font-bold uppercase mr-2">Contra Terceros</label>
+                  <input type="radio" name="tipo" value="Contra Terceros" />
+                </div>
+                <div>
+
+                <div>
+                  <label class="font-bold uppercase mr-2">Contra todo Riesgo</label>
+                  <input type="radio" name="tipo" value="Contra todo Riesgo" checked />
+                </div>
+               
+              </div>
+            </fieldset>
+            <div id="cargando" class="hidden">
+              <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+            </div>
+
+            <div class="py-4">
+              <button type="submit" class="btn-add">Cotizar Seguro</button>
+            </div>
+            <div id="resultado"></div>
+            <div id="errorMessage"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex my-5 uppercase underline font-bold" id="data" style="color: #f9ebc7;" >
+      <h4>Cotización del dólar Blue</h4>
+    </div>
+  </body>
+</html>

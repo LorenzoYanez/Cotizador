@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+  background-image: url(../img/welcome.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  /* Estilo de la barra de navegación */
+  .navbar-1 {
+    background-color: #072f38;
+    color: #c8cbc0;
+  }
+  
+  .navbar {
+    background-color: transparent;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #072f38;
+  }
+  
+  .header {
+    color: #334e3b;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0;
+  }
+  
+  .header h1 {
+    color:#c8cbc0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #registration-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #334e3b;
+    border-radius: 5px;
+  }
+  
+  .btn-add {
+    background-color: #072f38;
+    color: #c8cbc0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn-add:hover {
+    background-color: #bd7423;
+}
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 50px 0;
+    }
+  }

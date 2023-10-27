@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seguros">
+    <meta name="keywords" content="Seguros, Autos, Ford, Nissan">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Proyecto: Cotizador de Seguros en Línea</title>
+</head>
+
+<body>
+
+  <section class="navbar-1">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-trasnparent">
+
+      <div class="container">
+        <a class="navbar-brand fs-4" href="#">Bold Seguros</a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #1c3741;">
+
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bold Seguros</h5>
+
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="https://g.co/finance/USD-ARS" target="_blank" >Dolar Hoy</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+
+              <a href="../pages/cotizador.html" class="text-white text-decoration-none px-3 py-1 rounded-4"
+              style="background-color: #bd7423;" id="cotiza-ya" target="_blank">Cotiza ya!</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </section>
+
+    <header class="header">
+        <div class="container">
+            <h1>Cotizador de Seguros</h1>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="first-name">Nombre:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Apellido:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <a href="../pages/cotizador.html" id="registrate" class="btn-add" target="_blank">Registrate</a>
+              </div>
+                           
+            </form>
+        </div>
+    </header>
+    <script defer src="../js/regisForm.js"></script>
+</body>
+</html>

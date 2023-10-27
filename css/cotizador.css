@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url(../img/welcome.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.navbar{
+    background-color: #072f38;
+    color: #c8cbc0;
+    padding: 20px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: start;
+    color: #1d3658;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c8cbc0;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.btn-add {
+    background-color: #072f38;
+    color: #c8cbc0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #bd7423;
+}
+
+.hidden {
+    display: none;
+}
+
+#cotizar-seguro {
+    margin-top: 180px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.footer{
+    color: #fefae0;
+}
+
+
+.footer-2 h4{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+  
+@media (max-width: 768px) {
+    .header {
+      padding: 50px 0;
+    }
+  }
+    
